@@ -18,7 +18,7 @@ export default function Login() {
             <h1>Login</h1>
           </div>
           <div className="flex items-center justify-center gap-3 p-2">
-            <p>Don't have an account?</p>
+            <p>Don&apos;t have an account?</p>
             <button className="text-white p-[5px]  px-7 rounded bg-blue-600">signup</button>
           </div>
           <div className='px-2'>
