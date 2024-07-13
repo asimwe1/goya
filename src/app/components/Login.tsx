@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Continue from '../continue';
+import Continue from './Continue';
 
 export default function Login() {
 

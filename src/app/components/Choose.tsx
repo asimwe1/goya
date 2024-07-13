@@ -17,9 +17,6 @@ export default function Choose() {
         </div>
         <div>
           <ChoiceItem/>
-          <ChoiceItem/>
-          <ChoiceItem/>
-          <ChoiceItem/>
         </div>
       </div>
 

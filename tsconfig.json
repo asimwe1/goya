@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/Signup.tsx", "src/app/components/Login.tsx", "src/app/components/Continue.tsx", "src/app/components/Choose.tsx", "src/app/components/ChoiceItem.tsx", "src/app/components/Career.tsx"],
   "exclude": ["node_modules"]
 }

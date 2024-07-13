@@ -22,9 +22,9 @@ export default function Home() {
       <Link href='/login'>
        <Login/>
       </Link>
-      <Link href='/signup'>
+      {/* <Link href='/signup'>
        <Signup/>
-      </Link>
+      </Link> */}
       <Link href='/continue-as'>
        <Continue/>
       </Link>
