@@ -3,7 +3,7 @@ import Continue from './components/Continue'
 import Career from './components/Career'
 import ChoiceItem from './components/ChoiceItem'
 import Link from 'next/link'
-import Signup from './components/Signup'
+// import Signup from './components/Signup'
 import Login from './components/Login'
 
 
