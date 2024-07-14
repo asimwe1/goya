@@ -1,97 +1,103 @@
-// "use client";
+import Link from 'next/link';
+import React from 'react';
 
-// import Link from 'next/link';
-// import { useRouter } from 'next/router';
-// import { useState } from 'react';
+const Signup = () => {
+    return (
+        <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-md w-full space-y-8">
+                <div className="text-center">
+                    <img
+                        className="mx-auto h-[10rem] w-auto"
+                        src="/logo.png"
+                        alt="Logo"
+                    />
+                    <h2 className="mt-6 text-3xl font-extrabold text-gray-900">
+                        Create New Account
+                    </h2>
+                    <p className="mt-2 text-sm text-gray-600">
+                        Already Registered?{' '}
+                        <a href="/login" className="font-medium text-indigo-600 hover:text-indigo-500">
+                            log in
+                        </a>
+                    </p>
+                </div>
+                <form className="mt-8 space-y-6" action="#" method="POST">
+                    <div className="rounded-md shadow-sm space-y-[2rem]">
+                        <div className="text-center">
+                            <label htmlFor="name" className="block text-gray-700 font-serif text-[1.6rem]">
+                                NAME
+                            </label>
+                            <input
+                                id="name"
+                                name="name"
+                                type="text"
+                                autoComplete="name"
+                                required
+                                className="appearance-none bg-[#ececec] border-none rounded-[10px] block w-full px-3 py-[0.8rem] border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                placeholder="Alexis Murenzi"
+                            />
+                        </div>
+                        <div className="text-center">
+                            <label htmlFor="email-address" className="block text-gray-700 font-serif font-serif text-[1.6rem]">
+                                EMAIL
+                            </label>
+                            <input
+                                id="email-address"
+                                name="email"
+                                type="email"
+                                autoComplete="email"
+                                required
+                                className="appearance-none  bg-[#ececec] border-none rounded-[10px] block w-full px-3 py-[0.8rem] border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                placeholder="goyoungafrica@gmail.com"
+                            />
+                        </div>
+                        <div className="text-center">
+                            <label htmlFor="password" className="block text-gray-700 font-serif text-[1.5rem]">
+                                PASSWORD
+                            </label>
+                            <input
+                                id="password"
+                                name="password"
+                                type="password"
+                                autoComplete="current-password"
+                                required
+                                className="appearance-none border-none bg-[#ececec] rounded-[10px] block w-full px-3 py-[0.8rem] border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                placeholder="Password"
+                            />
+                        </div>
+                        <div className="text-center">
+                            <label htmlFor="dob" className="block text-gray-700 font-serif text-[1.6rem]">
+                                Date of Birth
+                            </label>
+                            <input
+                                id="dob"
+                                name="dob"
+                                type="date"
+                                required
+                                className="appearance-none border-none bg-[#ececec] rounded-[10px] block w-full px-3 py-[0.8rem] border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                            />
+                        </div>
+                    </div>
 
-// export default function Signup() {
-//   const router = useRouter(); // Ensure this is called at the top level
-//   const [formData, setFormData] = useState({
-//     name: '',
-//     email: '',
-//     password: '',
-//     dob: ''
-//   });
+                    <Link href={''}>
+                    water
+                    </Link>
 
-//   const handleChange = (e: { target: { name: any; value: any; }; }) => {
-//     const { name, value } = e.target;
-//     setFormData({
-//       ...formData,
-//       [name]: value
-//     });
-//   };
+                    <div>
+                        <button
+                            type="submit"
+                            className="group relative w-full flex justify-center text-center py-[1.2rem] px-4 border border-transparent text-sm font-bold text-[1rem] rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        >                        <Link href={'/continue-as'} >
 
-//   const handleSignup = async (e: { preventDefault: () => void; }) => {
-//     e.preventDefault();
+                            Sign up
+                            </Link>
 
-//     if (!formData.name || !formData.email || !formData.password || !formData.dob) {
-//       alert("Please fill in all fields");
-//       return;
-//     }
+                        </button>
+            </div>
+        </form>
+      </div >
+    </div >
+  );
+};
 
-//     router.push('/continue-as');
-//   };
-
-//   return (
-//     <main className="">
-//       <div>
-//         <form onSubmit={handleSignup}>
-//           <div className="p-4 text-center px-6 text-3xl font-semibold text-blue-500">
-//             <h1>Create New Account</h1>
-//           </div>
-//           <div className="flex items-center justify-center gap-3 p-2">
-//             <p className='opacity-75'>Already registered?</p>
-//             <button className="text-white p-[5px] px-7 rounded bg-blue-600">
-//               <Link href="/login">Login</Link>
-//             </button>
-//           </div>
-//           <div className='px-2'>
-//             <div className="flex flex-col items-center justify-center p-1">
-//               <label htmlFor="name" className='text-[.9rem] font-semibold opacity-55'>NAME</label>
-//               <input
-//                 type="text"
-//                 name="name"
-//                 value={formData.name}
-//                 onChange={handleChange}
-//                 className='border bg-slate-300 p-2 rounded outline-none w-full text-center'
-//               />
-//             </div>
-//             <div className="flex flex-col items-center justify-center p-1">
-//               <label htmlFor="email" className='text-[.9rem] font-semibold opacity-55'>EMAIL</label>
-//               <input
-//                 type="email"
-//                 name="email"
-//                 value={formData.email}
-//                 onChange={handleChange}
-//                 className='border bg-slate-300 p-2 rounded outline-none w-full text-center'
-//               />
-//             </div>
-//             <div className="flex flex-col items-center justify-center p-1">
-//               <label htmlFor="password" className='text-[.9rem] font-semibold opacity-55'>PASSWORD</label>
-//               <input
-//                 type="password"
-//                 name="password"
-//                 value={formData.password}
-//                 onChange={handleChange}
-//                 className='border bg-slate-300 p-2 rounded outline-none w-full text-center'
-//               />
-//             </div>
-//             <div className="flex flex-col items-center justify-center p-1">
-//               <label htmlFor="dob" className='text-[.9rem] font-semibold opacity-55'>DATE OF BIRTH</label>
-//               <input
-//                 type="date"
-//                 name="dob"
-//                 value={formData.dob}
-//                 onChange={handleChange}
-//                 className='border bg-slate-300 p-2 rounded outline-none w-full text-center'
-//               />
-//             </div>
-//           </div>
-//           <div className='flex items-center justify-center px-3 py-4'>
-//             <button type="submit" className='border p-2 w-full text-white rounded bg-blue-600'>Sign up</button>
-//           </div>
-//         </form>
-//       </div>
-//     </main>
-//   );
-// }
+export default Signup;

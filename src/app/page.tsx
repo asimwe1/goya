@@ -3,7 +3,7 @@ import Continue from './components/Continue'
 import Career from './components/Career'
 import ChoiceItem from './components/ChoiceItem'
 import Link from 'next/link'
-// import Signup from './components/Signup'
+import Signup from './components/Signup'
 import Login from './components/Login'
 
 
@@ -22,9 +22,9 @@ export default function Home() {
       <Link href='/login'>
        <Login/>
       </Link>
-      {/* <Link href='/signup'>
+      <Link href='/signup'>
        <Signup/>
-      </Link> */}
+      </Link>
       <Link href='/continue-as'>
        <Continue/>
       </Link>
