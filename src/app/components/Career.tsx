@@ -11,20 +11,26 @@ export default function Career() {
       height={250}
       />
 
-      <h1 className='text-[2rem] font-bold text-[#6562DF] font-serif'>Choose your career</h1>
+      <h1 className='text-[2.5rem] font-bold text-[#6562DF] font-serif'>Choose your career</h1>
       <div className="flex flex-col items-center gap-4 mt-8">
-        <Link href="/choice-item">
-          <button className="font-bold text-white bg-[#6562DF] w-[20rem] rounded-[10px] py-[1rem]">Football Player</button>
+        <Link href="/choose">
+          <button className="font-bold text-white bg-[#6562DF] w-[24rem] rounded-[10px] py-[1.2rem]">Football Player</button>
         </Link>
-        <Link href="/choice-item">
-          <button className="font-bold text-white bg-[#6562DF] w-[20rem] rounded-[10px] py-[1rem]">Software Engineer</button>
+        <Link href="/choose">
+          <button className="font-bold text-white bg-[#6562DF] w-[24rem] rounded-[10px] py-[1.2rem]">Software Engineer</button>
         </Link>
-        <Link href="/choice-item">
-          <button className="font-bold text-white bg-[#6562DF] w-[20rem] rounded-[10px] py-[0.6rem]">Film Writer</button>
+        <Link href="/choose">
+          <button className="font-bold text-white bg-[#6562DF] w-[24rem] rounded-[10px] py-[1.2rem]">Film Writer</button>
         </Link>
-        <Link href="/choice-item">
-          <button className="font-bold text-white bg-[#6562DF] w-[20rem] rounded-[10px] py-[0.6rem]">Entrepreneur</button>
+        <Link href="/choose">
+          <button className="font-bold text-white bg-[#6562DF] w-[24rem] rounded-[10px] py-[1.2rem]">Entrepreneur</button>
         </Link>
+      </div>
+      <div className='my-[10rem] '>
+      <Link href="/books">
+          <button className="font-bold text-white bg-[#6562DF] w-[24rem] rounded-[10px] py-[1.2rem]">Books</button>
+        </Link>
+
       </div>
     </main>
   );
